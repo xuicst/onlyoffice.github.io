@@ -1,0 +1,46 @@
+{
+    "name": "NiuTrans",
+    "guid": "asc.{67fe1c85-ba0b-4759-9825-9f762391ff43}",
+    "version": "1.0.0",
+
+    "variations": [
+        {
+            "description": "使用小牛翻译将所选文本翻译成其他语言。",
+            "url": "index.html",
+            "icons": ["resources/xniu.png", "xniu@2x.png"],
+            "icons2": [
+                {
+                    "theme" : "flat",
+
+                    "100%": { "normal": "xniu.png" },
+                    "200%": { "normal": "xniu@2x.png" },
+                    "default": { "normal": "xniu.png" }
+                }
+            ],
+            "isViewer": true,  //仅预览模式时，插件是否要启用，默认时为false
+            "EditorsSupport": [ "word", "cell", "slide", "pdf" ],
+            
+            "isVisual": true,  //插件是否有UI视图
+            "isModal": false,  //插件是否以弹框形式打开
+            "isInsideMode": true,  
+
+
+            "initDataType": "text",
+
+            "isUpdateOleOnResize": false,
+            "initOnSelectionChanged": true,
+            "store": {
+                "background": {
+                    "light": "#F5F5F5",  # 插件商店图片显示
+                    "dark": "#444444"
+                },
+                "categories": ["specAbilities", "work"],
+                "icons": {
+                    "light": "resources/store/icons",
+                    "dark" : "resources/store/icons"
+                },
+                "screenshots": ["resources/store/screenshots/"]
+            }
+        }
+    ]
+}
